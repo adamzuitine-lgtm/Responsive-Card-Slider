@@ -1,0 +1,133 @@
+/*  Import google fonts inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+
+body{
+  display:flex;
+ align-items:center; 
+ justify-content:center;
+ min-height: 100vh;
+ background: linear-gradient(rgba(255, 255, 255, 0.788),rgb(34, 192, 81));
+}
+
+.swiper-card {
+  max-width: 1100px;
+  margin: 0 60px 35px;
+  overflow: hidden;
+}
+.liste-cart  {
+
+list-style: none;
+}
+  
+
+.liste-cart .item-cart .link-cart {
+
+     
+    user-select: none;
+   display: block;
+   background: white;
+   padding: 10px;
+   text-decoration: none;
+   border-radius: 10px;
+   border: 2px solid transparent;
+   box-shadow: 0px 10px 10px rgb(39, 240, 89);
+   
+}
+
+.liste-cart .item-cart .link-cart:hover {
+     border: 2px solid  rgb(87, 13, 226);
+}
+
+.liste-cart .item-cart .link-cart:active {
+     cursor: grabbing;
+}
+
+.liste-cart .item-cart .link-cart .cart-image{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    
+}
+
+
+.liste-cart .item-cart .link-cart .padge{
+    color: rgb(87, 13, 226);
+    font-size: 14px;
+    font-weight: 500;
+    background-color: rgb(148, 216, 193);
+    width: fit-content;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.liste-cart .item-cart .link-cart:hover .padge {
+     background-color:rgb(87, 13, 226);
+     color:rgb(12, 238, 87);
+     transition: 0.4s ease-in;
+}
+
+.liste-cart .item-cart .link-cart h1{
+
+    color: rgba(0, 0, 0, 0.884);
+    font-size: 14px;
+    font-weight: 600; 
+}
+
+.liste-cart .item-cart .link-cart .cart-button{
+   
+    height: 35px;
+    width: 35px;
+    color: #383ab8;
+    border-radius: 50%;
+    margin: 20px 0 5px;
+    background-color: rgb(148, 216, 193);
+    border-color:#383ab8;
+    cursor: pointer;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+
+
+.liste-cart .item-cart .link-cart:hover .cart-button {
+  color:rgb(12, 238, 87);
+  border-color:rgb(87, 13, 226);
+  background: rgb(87, 13, 226); 
+
+}
+
+.swiper-card .swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  background: rgb(87, 13, 226);
+  opacity: 0.5;
+ 
+}
+
+.swiper-card .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+ 
+.swiper-card .swiper-slide-button {
+  color:rgb(87, 13, 226);
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-card {
+    margin: 0 20px 35px;
+  }
+
+  .swiper-card .swiper-slide-button {
+  display: none;
+}
+  
+}
+ 
